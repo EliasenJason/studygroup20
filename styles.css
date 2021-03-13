@@ -1,19 +1,41 @@
-.picture-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
+body {
+    background-color: white;
+    font-family: 'Staatliches', cursive; 
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.title {
-    color: grey;
-    font-size: 18px;
+/* student container */
+.student-container {
+    display: flex;
+    background-color: lightgrey;
+    padding: 0 1em;
+    max-width: 500px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .8);
+    margin: 1em;
+}
+
+
+/* picture box */
+.picture-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
 }
 
 img {
     width: 100%;
 }
 
+.name {
+    font-family: serif;
+    font-size: 2em;
+    font-weight: bolder;
+    letter-spacing: .15em;
+}
 button {
     border: none;
     outline: 0;
@@ -24,15 +46,47 @@ button {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.5em;
 }
   
 a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 2.2em;
     color: black;
 }
   
 button:hover, a:hover {
-    opacity: 0.7;
+    opacity: 0.5;
+}
+
+/* details container */
+.details-container {
+    width: 300px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 2.5fr;
+    grid-template-areas:
+    "labels answers"
+    "about about";
+    font-size: 1.8em;
+    grid-gap: 1em;
+    justify-content: space-around;
+}
+
+.labels {
+    grid-area: labels;
+    text-align: right;
+}
+
+.answers {
+    grid-area: answers;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    grid-area: about;
+    justify-content: start;
+    padding: 0 1em;
 }

@@ -90,3 +90,17 @@ button:hover, a:hover {
     justify-content: start;
     padding: 0 1em;
 }
+
+#mariaProfile {
+    background-color: rgb(192, 250, 247);
+    color: rgb(5, 52, 139);
+}
+
+#mariaImage {
+    background-color: rgb(159, 250, 245);
+    color: rgb(3, 43, 117);
+}
+
+#mariaContact {
+    background-color: darkblue;
+}
